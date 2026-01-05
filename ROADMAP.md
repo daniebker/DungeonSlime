@@ -21,8 +21,8 @@ Goal: Finish the example game from Monogame
 - [x] [Chapter 17](https://docs.monogame.net/articles/tutorials/building_2d_games/17_scenes/index.html)
 - [x] [Chapter 18](https://docs.monogame.net/articles/tutorials/building_2d_games/18_texture_sampling/index.html)
 - [ ] Chapter 19
-- [ ] Chapter 20
-- [ ] Chapter 21
+- [x] [Chapter 20](https://docs.monogame.net/articles/tutorials/building_2d_games/20_implementing_ui_with_gum/index.html?tabs=vscode)
+- [x] [Chapter 21](https://docs.monogame.net/articles/tutorials/building_2d_games/21_customizing_gum_ui/index.html)
 - [ ] Chapter 22
 - [ ] Chapter 23
 - [ ] Chapter 24
