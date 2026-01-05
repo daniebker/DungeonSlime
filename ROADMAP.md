@@ -23,7 +23,7 @@ Goal: Finish the example game from Monogame
 - [ ] Chapter 19
 - [x] [Chapter 20](https://docs.monogame.net/articles/tutorials/building_2d_games/20_implementing_ui_with_gum/index.html?tabs=vscode)
 - [x] [Chapter 21](https://docs.monogame.net/articles/tutorials/building_2d_games/21_customizing_gum_ui/index.html)
-- [ ] Chapter 22
+- [ ] [Chapter 22](https://docs.monogame.net/articles/tutorials/building_2d_games/22_snake_game_mechanics/index.html)
 - [ ] Chapter 23
 - [ ] Chapter 24
 - [ ] Chapter 25

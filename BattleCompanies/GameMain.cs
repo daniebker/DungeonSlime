@@ -4,7 +4,6 @@ using Gum.Forms.Controls;
 using BattleCompanies.AppLib;
 using MonoGameGum;
 using Microsoft.Xna.Framework.Media;
-using BattleCompanies.AppLib;
 
 namespace BattleCompanies;
 
