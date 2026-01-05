@@ -25,8 +25,8 @@ Goal: Finish the example game from Monogame
 - [x] [Chapter 21](https://docs.monogame.net/articles/tutorials/building_2d_games/21_customizing_gum_ui/index.html)
 - [x] [Chapter 22](https://docs.monogame.net/articles/tutorials/building_2d_games/22_snake_game_mechanics/index.html)
 - [x] [Chapter 23](https://docs.monogame.net/articles/tutorials/building_2d_games/23_completing_the_game/index.html)
-- [ ] Chapter 24
-- [ ] Chapter 25
+- [x] [Chapter 24](https://docs.monogame.net/articles/tutorials/building_2d_games/24_shaders/index.html)
+- [ ] [Chapter 25](https://docs.monogame.net/articles/tutorials/building_2d_games/25_packaging_game/index.html?tabs=windows)
 - [ ] Chapter 26
 - [ ] Chapter 27
 
