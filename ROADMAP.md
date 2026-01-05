@@ -16,8 +16,8 @@ Goal: Finish the example game from Monogame
 - [x] [Chapter 12](https://docs.monogame.net/articles/tutorials/building_2d_games/12_collision_detection/index.html)
 - [x] [Chapter 13](https://docs.monogame.net/articles/tutorials/building_2d_games/13_working_with_tilemaps/index.html)
 - [x] [Chapter 14](https://docs.monogame.net/articles/tutorials/building_2d_games/14_soundeffects_and_music/index.html)
-- [ ] [Chapter 15](https://docs.monogame.net/articles/tutorials/building_2d_games/15_audio_controller/index.html)
-- [ ] Chapter 16
+- [x] [Chapter 15](https://docs.monogame.net/articles/tutorials/building_2d_games/15_audio_controller/index.html)
+- [ ] [Chapter 16](https://docs.monogame.net/articles/tutorials/building_2d_games/16_working_with_spritefonts/index.html)
 - [ ] Chapter 17
 - [ ] Chapter 18
 - [ ] Chapter 19
@@ -29,6 +29,10 @@ Goal: Finish the example game from Monogame
 - [ ] Chapter 25
 - [ ] Chapter 26
 - [ ] Chapter 27
+
+## v0.1.1
+
+- BUG: Fix passing through bottom wall
 
 ## v0.2.0
 
