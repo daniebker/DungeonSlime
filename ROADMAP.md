@@ -23,16 +23,12 @@ Goal: Finish the example game from Monogame
 - [ ] Chapter 19
 - [x] [Chapter 20](https://docs.monogame.net/articles/tutorials/building_2d_games/20_implementing_ui_with_gum/index.html?tabs=vscode)
 - [x] [Chapter 21](https://docs.monogame.net/articles/tutorials/building_2d_games/21_customizing_gum_ui/index.html)
-- [ ] [Chapter 22](https://docs.monogame.net/articles/tutorials/building_2d_games/22_snake_game_mechanics/index.html)
-- [ ] Chapter 23
+- [x] [Chapter 22](https://docs.monogame.net/articles/tutorials/building_2d_games/22_snake_game_mechanics/index.html)
+- [x] [Chapter 23](https://docs.monogame.net/articles/tutorials/building_2d_games/23_completing_the_game/index.html)
 - [ ] Chapter 24
 - [ ] Chapter 25
 - [ ] Chapter 26
 - [ ] Chapter 27
-
-## v0.1.1
-
-- BUG: Fix passing through bottom wall
 
 ## v0.2.0
 

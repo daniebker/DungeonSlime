@@ -2,12 +2,20 @@
 
 ### on mac
 
+Follow setup instructions [here](https://docs.monogame.net/articles/getting_started/1_setting_up_your_os_for_development_macos.html?tabs=android)
+
+```sh
+echo export MGFXC_WINE_PATH=~/.winemonogame >> ~/.zshrc
+source ~/.zshrc
+```
+
 See [github issue](https://github.com/MonoGame/MonoGame/issues/7423)
 
-```
+```sh
 cd BattleCompanies
 dotnet mgcb-editor-mac $(realpath ./Content/Content.mgcb)
 ```
+
 
 ## References
 
