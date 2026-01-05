@@ -18,8 +18,8 @@ Goal: Finish the example game from Monogame
 - [x] [Chapter 14](https://docs.monogame.net/articles/tutorials/building_2d_games/14_soundeffects_and_music/index.html)
 - [x] [Chapter 15](https://docs.monogame.net/articles/tutorials/building_2d_games/15_audio_controller/index.html)
 - [x] [Chapter 16](https://docs.monogame.net/articles/tutorials/building_2d_games/16_working_with_spritefonts/index.html)
-- [ ] [Chapter 17](https://docs.monogame.net/articles/tutorials/building_2d_games/17_scenes/index.html)
-- [ ] Chapter 18
+- [x] [Chapter 17](https://docs.monogame.net/articles/tutorials/building_2d_games/17_scenes/index.html)
+- [x] [Chapter 18](https://docs.monogame.net/articles/tutorials/building_2d_games/18_texture_sampling/index.html)
 - [ ] Chapter 19
 - [ ] Chapter 20
 - [ ] Chapter 21
