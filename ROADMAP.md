@@ -12,8 +12,8 @@ Goal: Finish the example game from Monogame
 - [x] Chapter 9
 - [x] [Chapter 10](https://docs.monogame.net/articles/tutorials/building_2d_games/10_handling_input/index.html)
 - [x] [Chapter 11](https://docs.monogame.net/articles/tutorials/building_2d_games/11_input_management/index.html)
-- [ ] [Chapter 12](https://docs.monogame.net/articles/tutorials/building_2d_games/12_collision_detection/index.html)
-- [ ] Chapter 13
+- [x] [Chapter 12](https://docs.monogame.net/articles/tutorials/building_2d_games/12_collision_detection/index.html)
+- [x] [Chapter 13](https://docs.monogame.net/articles/tutorials/building_2d_games/13_working_with_tilemaps/index.html)
 - [ ] Chapter 14
 - [ ] Chapter 15
 - [ ] Chapter 16
