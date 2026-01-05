@@ -1,2 +1,2 @@
-﻿using var game = new BattleCompanies.App.GameMain();
+﻿using var game = new BattleCompanies.GameMain();
 game.Run();
