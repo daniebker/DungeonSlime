@@ -1,6 +1,7 @@
 ## v0.1.0
 
 Goal: Finish the example game from Monogame
+
 - [x] Chapter 1
 - [x] Chapter 2
 - [x] Chapter 3
@@ -14,8 +15,8 @@ Goal: Finish the example game from Monogame
 - [x] [Chapter 11](https://docs.monogame.net/articles/tutorials/building_2d_games/11_input_management/index.html)
 - [x] [Chapter 12](https://docs.monogame.net/articles/tutorials/building_2d_games/12_collision_detection/index.html)
 - [x] [Chapter 13](https://docs.monogame.net/articles/tutorials/building_2d_games/13_working_with_tilemaps/index.html)
-- [ ] Chapter 14
-- [ ] Chapter 15
+- [x] [Chapter 14](https://docs.monogame.net/articles/tutorials/building_2d_games/14_soundeffects_and_music/index.html)
+- [ ] [Chapter 15](https://docs.monogame.net/articles/tutorials/building_2d_games/15_audio_controller/index.html)
 - [ ] Chapter 16
 - [ ] Chapter 17
 - [ ] Chapter 18
