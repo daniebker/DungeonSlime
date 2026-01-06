@@ -15,8 +15,8 @@ namespace DungeonSlime.Scenes;
 
 public class TitleScene : Scene
 {
-    private const string BATTLE_TEXT = "Battle";
-    private const string COMPANIES_TEXT = "Companies";
+    private const string DUNGEON_TEXT = "Dungeon";
+    private const string SLIME_TEXT = "Slime";
     private const string PRESS_ENTER_TEXT = "Press Enter To Start";
 
     // The font to use to render normal text.
@@ -80,12 +80,12 @@ public class TitleScene : Scene
         Core.ExitOnEscape = true;
 
         // Set the position and origin for the Dungeon text.
-        Vector2 size = _font5x.MeasureString(BATTLE_TEXT);
+        Vector2 size = _font5x.MeasureString(DUNGEON_TEXT);
         _dungeonTextPos = new Vector2(640, 100);
         _dungeonTextOrigin = size * 0.5f;
 
         // Set the position and origin for the Slime text.
-        size = _font5x.MeasureString(COMPANIES_TEXT);
+        size = _font5x.MeasureString(SLIME_TEXT);
         _slimeTextPos = new Vector2(757, 207);
         _slimeTextOrigin = size * 0.5f;
 
@@ -163,17 +163,17 @@ public class TitleScene : Scene
 
             // Draw the Dungeon text slightly offset from it is original position and
             // with a transparent color to give it a drop shadow
-            Core.SpriteBatch.DrawString(_font5x, BATTLE_TEXT, _dungeonTextPos + new Vector2(10, 10), dropShadowColor, 0.0f, _dungeonTextOrigin, 1.0f, SpriteEffects.None, 1.0f);
+            Core.SpriteBatch.DrawString(_font5x, DUNGEON_TEXT, _dungeonTextPos + new Vector2(10, 10), dropShadowColor, 0.0f, _dungeonTextOrigin, 1.0f, SpriteEffects.None, 1.0f);
 
             // Draw the Dungeon text on top of that at its original position
-            Core.SpriteBatch.DrawString(_font5x, BATTLE_TEXT, _dungeonTextPos, Color.White, 0.0f, _dungeonTextOrigin, 1.0f, SpriteEffects.None, 1.0f);
+            Core.SpriteBatch.DrawString(_font5x, DUNGEON_TEXT, _dungeonTextPos, Color.White, 0.0f, _dungeonTextOrigin, 1.0f, SpriteEffects.None, 1.0f);
 
             // Draw the Slime text slightly offset from it is original position and
             // with a transparent color to give it a drop shadow
-            Core.SpriteBatch.DrawString(_font5x, COMPANIES_TEXT, _slimeTextPos + new Vector2(10, 10), dropShadowColor, 0.0f, _slimeTextOrigin, 1.0f, SpriteEffects.None, 1.0f);
+            Core.SpriteBatch.DrawString(_font5x, SLIME_TEXT, _slimeTextPos + new Vector2(10, 10), dropShadowColor, 0.0f, _slimeTextOrigin, 1.0f, SpriteEffects.None, 1.0f);
 
             // Draw the Slime text on top of that at its original position
-            Core.SpriteBatch.DrawString(_font5x, COMPANIES_TEXT, _slimeTextPos, Color.White, 0.0f, _slimeTextOrigin, 1.0f, SpriteEffects.None, 1.0f);
+            Core.SpriteBatch.DrawString(_font5x, SLIME_TEXT, _slimeTextPos, Color.White, 0.0f, _slimeTextOrigin, 1.0f, SpriteEffects.None, 1.0f);
 
             // Always end the sprite batch when finished.
             Core.SpriteBatch.End();
