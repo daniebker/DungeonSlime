@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleCompanies.Core", "BattleCompanies.Core\BattleCompanies.Core.csproj", "{0731EBA8-F467-455D-9C22-0A1D9338D597}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoLib.ECS", "MonoLib.ECS\MonoLib.ECS.csproj", "{0731EBA8-F467-455D-9C22-0A1D9338D597}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleCompanies.UnitTests", "BattleCompanies.Core.UnitTests\BattleCompanies.UnitTests.csproj", "{9C5557EE-8096-4114-B6BC-6446833EA279}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonSlime.UnitTests", "MonoLib.ECS.UnitTests\DungeonSlime.UnitTests.csproj", "{9C5557EE-8096-4114-B6BC-6446833EA279}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleCompanies.AppLib", "BattleCompanies.AppLib\BattleCompanies.AppLib.csproj", "{99DB4760-A0FF-4276-A4CA-92E6666EDF06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoLib.Core", "MonoLib.Core\MonoLib.Core.csproj", "{99DB4760-A0FF-4276-A4CA-92E6666EDF06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleCompanies.Game", "BattleCompanies\BattleCompanies.Game.csproj", "{F4C7546B-3C3F-4D09-B02E-EE8D31F5D78C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonSlime.Game", "DungeonSlime\DungeonSlime.Game.csproj", "{F4C7546B-3C3F-4D09-B02E-EE8D31F5D78C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
