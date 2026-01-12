@@ -158,7 +158,7 @@ jobs:
       uses: ./.github/actions/publish-itch
       with:
         api-key: ${{ secrets.BUTLER_API_KEY }}
-        itch_user: tryp_tch
+        itch_user: daniebker
         itch_game: dungeon-slime
         channel: windows
         package: artifacts/DungeonSlime-windows-*/
@@ -168,7 +168,7 @@ jobs:
       uses: ./.github/actions/publish-itch
       with:
         api-key: ${{ secrets.BUTLER_API_KEY }}
-        itch_user: tryp_tch
+        itch_user: daniebker
         itch_game: dungeon-slime
         channel: linux
         package: artifacts/DungeonSlime-linux-*/
@@ -178,7 +178,7 @@ jobs:
       uses: ./.github/actions/publish-itch
       with:
         api-key: ${{ secrets.BUTLER_API_KEY }}
-        itch_user: tryp_tch
+        itch_user: daniebker
         itch_game: dungeon-slime
         channel: osx
         package: artifacts/DungeonSlime-macos-*/
