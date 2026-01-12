@@ -37,10 +37,11 @@ runs:
         # Hardcoded to Windows builds
         BUTLER_PLATFORM="windows-amd64"
         BUTLER_EXEC="butler.exe"
-        mkdir ./tools 2>/dev/null || true
+        rm -rf ./tools
+        mkdir ./tools
         pushd tools
           curl -sSLfo ./butler.zip "https://broth.itch.zone/butler/${BUTLER_PLATFORM}/LATEST/archive/default"
-          unzip butler.zip
+          unzip -o -q butler.zip
           chmod +x ./${BUTLER_EXEC}
         popd
         ./tools/${BUTLER_EXEC} -V
