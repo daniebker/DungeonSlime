@@ -51,10 +51,20 @@ runs:
       shell: bash
       run: |
         BUTLER_EXEC="butler.exe"
+        # Resolve package glob to first match
+        shopt -s nullglob
+        PACKAGE_GLOB="${{ inputs.package }}"
+        matches=( $PACKAGE_GLOB )
+        if [ ${#matches[@]} -eq 0 ]; then
+          echo "No package matched pattern: $PACKAGE_GLOB" >&2
+          exit 1
+        fi
+        PACKAGE_PATH="${matches[0]}"
+        echo "Using package: $PACKAGE_PATH"
         versionArgument=""
         if [ -n "${{ inputs.version }}" ]; then
           versionArgument="--userversion ${{ inputs.version }}"
         fi
         ./tools/${BUTLER_EXEC} push \
-          "${{ inputs.package }}" \
+          "$PACKAGE_PATH" \
           ${{ inputs.itch_user }}/${{ inputs.itch_game }}:${{ inputs.channel }} ${versionArgument}
