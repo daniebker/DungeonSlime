@@ -18,16 +18,10 @@ dotnet mgcb-editor-mac $(realpath ./Content/Content.mgcb)
 
 ## Release
 
-### on mac x64
-
 ```sh
-dotnet publish -c Release -r osx-x64 -p:PublishReadyToRun=false -p:TieredCompilation=false --self-contained
-```
-
-### on mac arm64
-
-```sh
-dotnet publish -c Release -r osx-arm64 -p:PublishReadyToRun=false -p:TieredCompilation=false --self-contained
+cd DungeonSlime/ 
+dotnet tool install MonoPack -g
+monopack -p DungeonSlime.csproj
 ```
 
 ## References
