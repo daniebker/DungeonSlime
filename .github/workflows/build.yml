@@ -130,3 +130,50 @@ jobs:
           artifacts/**/*
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  publish:
+    needs: release
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Download all artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: artifacts
+    
+    - name: Get version info
+      id: version
+      run: |
+        TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+        echo "tag=$TAG" >> $GITHUB_OUTPUT
+    
+    - name: Publish Windows to itch.io
+      uses: Oval-Tutu/publish-to-itch-with-butler@v1
+      with:
+        api-key: ${{ secrets.BUTLER_API_KEY }}
+        itch_user: tryp_tch
+        itch_game: dungeon-slime
+        channel: windows
+        package: artifacts/DungeonSlime-windows-*/
+        version: ${{ steps.version.outputs.tag }}
+    
+    - name: Publish Linux to itch.io
+      uses: Oval-Tutu/publish-to-itch-with-butler@v1
+      with:
+        api-key: ${{ secrets.BUTLER_API_KEY }}
+        itch_user: tryp_tch
+        itch_game: dungeon-slime
+        channel: linux
+        package: artifacts/DungeonSlime-linux-*/
+        version: ${{ steps.version.outputs.tag }}
+    
+    - name: Publish macOS to itch.io
+      uses: Oval-Tutu/publish-to-itch-with-butler@v1
+      with:
+        api-key: ${{ secrets.BUTLER_API_KEY }}
+        itch_user: tryp_tch
+        itch_game: dungeon-slime
+        channel: osx
+        package: artifacts/DungeonSlime-macos-*/
+        version: ${{ steps.version.outputs.tag }}
