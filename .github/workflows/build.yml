@@ -106,7 +106,6 @@ jobs:
     
     - name: Get version info
       id: version
-      shell: bash
       run: |
         TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
         COMMIT=$(git rev-parse --short HEAD)
@@ -145,13 +144,12 @@ jobs:
     
     - name: Get version info
       id: version
-      shell: bash
       run: |
         TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
         echo "tag=$TAG" >> $GITHUB_OUTPUT
     
     - name: Publish Windows to itch.io
-      uses: Oval-Tutu/publish-to-itch-with-butler@1.0.0
+        uses: ./.github/actions/publish-itch
       with:
         api-key: ${{ secrets.BUTLER_API_KEY }}
         itch_user: tryp_tch
@@ -161,7 +159,7 @@ jobs:
         version: ${{ steps.version.outputs.tag }}
     
     - name: Publish Linux to itch.io
-      uses: Oval-Tutu/publish-to-itch-with-butler@1.0.0
+        uses: ./.github/actions/publish-itch
       with:
         api-key: ${{ secrets.BUTLER_API_KEY }}
         itch_user: tryp_tch
@@ -171,7 +169,7 @@ jobs:
         version: ${{ steps.version.outputs.tag }}
     
     - name: Publish macOS to itch.io
-      uses: Oval-Tutu/publish-to-itch-with-butler@1.0.0
+        uses: ./.github/actions/publish-itch
       with:
         api-key: ${{ secrets.BUTLER_API_KEY }}
         itch_user: tryp_tch
