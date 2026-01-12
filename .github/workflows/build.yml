@@ -149,7 +149,7 @@ jobs:
         echo "tag=$TAG" >> $GITHUB_OUTPUT
     
     - name: Publish Windows to itch.io
-        uses: ./.github/actions/publish-itch
+      uses: ./.github/actions/publish-itch
       with:
         api-key: ${{ secrets.BUTLER_API_KEY }}
         itch_user: tryp_tch
@@ -159,7 +159,7 @@ jobs:
         version: ${{ steps.version.outputs.tag }}
     
     - name: Publish Linux to itch.io
-        uses: ./.github/actions/publish-itch
+      uses: ./.github/actions/publish-itch
       with:
         api-key: ${{ secrets.BUTLER_API_KEY }}
         itch_user: tryp_tch
@@ -169,7 +169,7 @@ jobs:
         version: ${{ steps.version.outputs.tag }}
     
     - name: Publish macOS to itch.io
-        uses: ./.github/actions/publish-itch
+      uses: ./.github/actions/publish-itch
       with:
         api-key: ${{ secrets.BUTLER_API_KEY }}
         itch_user: tryp_tch
