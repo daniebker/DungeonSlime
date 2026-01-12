@@ -31,17 +31,25 @@ jobs:
     
     - name: Install Wine (macOS)
       if: runner.os == 'macOS'
-      run: brew install --cask wine-stable
+      run: |
+        brew install wget p7zip curl
+        brew install --cask wine-stable
+        xattr -dr com.apple.quarantine "/Applications/Wine Stable.app"
+        wget -qO- https://monogame.net/downloads/net9_mgfxc_wine_setup.sh | bash
     
     - name: Install Wine (Linux)
       if: runner.os == 'Linux'
       run: |
-        sudo dpkg --add-architecture i386
-        sudo mkdir -pm755 /etc/apt/keyrings
-        sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
-        sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
-        sudo apt update
-        sudo apt install --install-recommends winehq-stable -y
+        sudo apt install wget curl p7zip-full wine64 -y
+        wget -qO- https://monogame.net/downloads/net9_mgfxc_wine_setup.sh | bash
+    
+    - name: Setup Wine for MonoGame (macOS)
+      if: runner.os == 'macOS'
+      run: echo "MGFXC_WINE_PATH=$HOME/.winemonogame" >> $GITHUB_ENV
+    
+    - name: Setup Wine for MonoGame (Linux)
+      if: runner.os == 'Linux'
+      run: echo "MGFXC_WINE_PATH=$HOME/.winemonogame" >> $GITHUB_ENV
     
     - name: Restore dependencies
       run: dotnet restore
